@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  text-align: center;
+}
+
+.cont{
+  display: flex;
+  justify-content: center;
+}
+
+.grid-number{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 50%;
+}
+
+
+.grid{
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+  height: 90vh;
+  width: auto
+}
+
+.image{
+  background-image: url(drums.jpeg);
+  background-size: 100% 100%;
+  grid-area: 1/1/span 4/ span 4;
+}
+
+.flex1{
+  display: grid;
+}
+
+#ride {
+  background-color: rgba(119, 3, 3, 0.856);
+  align-self: flex-end;
+  justify-self: flex-end;
+  border: none;
+  border-radius: 70%;
+  grid-area: 1/1;
+  height: 52%;
+  width: 61%;
+  transform: rotate(0.04turn) translateX(75%) translateY(1%);
+}
+
+#crash{
+  background-color: rgba(2, 192, 255, 0.596);
+  align-self: flex-end;
+  border: none;
+  border-radius: 70%;
+  grid-area: 1/4;
+  height: 38%;
+  width: 62%;
+  transform: rotate(-18deg) translateX(-68%) translateY(-45%);
+}
+
+#hat{
+  background-color: rgba(0, 0, 0, 0.785);
+  align-self: flex-end;
+  border: none;
+  border-radius: 50%;
+  grid-area: 2/4;
+  height: 15%;
+  width: 58%;
+  transform: rotate(-2deg) translateX(-6%) translateY(-105%);
+}
+
+#bass{
+  background-color: rgba(137, 43, 226, 0.646);
+  grid-area: 3/2/span 2/span 2;
+  border-radius: 50%;
+  border: none;
+  height: 75%;
+  width: 55%;
+  transform: translateX(61%) translateY(-5%);
+}
+
+#hiTom{
+  background-color: rgba(43, 226, 101, 0.603);
+  grid-area: 2/3;
+  border-radius: 30%;
+  border: none;
+  height: 72%;
+  width: 55%;
+  transform: translateX(30%) translateY(24%) rotate(-2deg);
+}
+
+#middleTom{
+  background-color: rgba(226, 211, 43, 0.518);
+  grid-area: 2/2;
+  border-radius: 30%;
+  border: none;
+  height: 87%;
+  width: 57%;
+  transform: translateX(80%) translateY(8%);
+}
+
+#snare{
+  background-color: rgba(229, 185, 210, 0.736);
+  grid-area: 2/3;
+  border-radius: 20%;
+  border: none;
+  height: 37%;
+  width: 37%;
+  align-self: flex-end;
+  justify-self: flex-end;
+  transform: translateY(69%);
+}
+
+#floorTom{
+  background-color: rgba(0, 50, 130, 0.69);
+  grid-area: 2/2;
+  border-radius: 20%;
+  border: none;
+  height: 59%;
+  width: 55%;
+  transform: translateY(160%) translateX(23%);
+}
+
+#floorTom2{
+  background-color: rgba(10, 74, 178, 0.628);
+  grid-area: 2/2;
+  border-radius: 5%;
+  border: none;
+  height: 30%;
+  width: 35%;
+  transform: translateY(225%) translateX(38%);
+}
